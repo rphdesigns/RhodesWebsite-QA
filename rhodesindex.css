@@ -1,0 +1,98 @@
+.jumbotron {
+  background: no-repeat 50%;
+  background-size: cover;
+  background-position: 65% 75%;
+  font-family: "Play", sans-serif;
+  margin-bottom: auto;
+  height: 300px;
+}
+
+body {
+  font-family: "Russo One", sans-serif;
+}
+
+.rhodes {
+  background-color: #d3d3d3;
+}
+
+.icons {
+  color: white;
+  padding-right: 3%;
+}
+
+.iconsFooter {
+  color: white;
+  font-size: xx-large;
+}
+
+#comingsoon {
+  background-size: cover;
+}
+
+.footer {
+  position: inherit;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+}
+
+.img-responsive {
+  width: 100%;
+  height: 292px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-fluid {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.moreinfo {
+  text-align: center;
+  background: rgb(79, 76, 77);
+  background: radial-gradient(
+    circle,
+    rgba(79, 76, 77, 0.927608543417367) 64%,
+    rgba(108, 108, 108, 0.4150035014005602) 100%
+  );
+}
+
+.moreinfoform {
+  font-size: x-large;
+}
+
+.moreinfoform1 {
+  padding: 25px 0px 25px 0px;
+}
+
+.moreinfoback {
+  background: no-repeat;
+  background-image: url(http://rhodesperformance.net/Logos/R-logo-backdrop.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+.moreinforow {
+  padding: 100px 100px 200px 100px;
+}
+
+.bronze_form {
+  text-align: left;
+
+  background: rgb(79, 76, 77);
+  background: radial-gradient(
+    circle,
+    rgba(79, 76, 77, 0.927608543417367) 64%,
+    rgba(108, 108, 108, 0.4150035014005602) 100%
+  );
+}
+
+.bronze_label {
+  padding-left: 25px;
+  text-align: left;
+}
