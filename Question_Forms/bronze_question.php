@@ -118,7 +118,7 @@ include('bronze_email.php')
                                         <label class="form-check-label" for="inlineRadio1">Gym</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="workout_equipmentOptions" id="body_weight" value="option2">
+                                        <input class="form-check-input" type="radio" name="workout_equipmentRadioOptions" id="body_weight" value="option2">
                                         <label class="form-check-label" for="inlineRadio2">Body Weight</label>
                                     </div>
                                 </div>
@@ -132,7 +132,7 @@ include('bronze_email.php')
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select class="form-control">
+                                    <select class="form-control" name="workouts_perweek">
                                         <option>2</option>
                                         <option>3</option>
                                         <option>4</option>
@@ -141,7 +141,7 @@ include('bronze_email.php')
                             </div>
                         </div>
                         <div style="text-align: center;">
-                            <button type="submit" id="submit" name="submit" class="btn btn-dark">Submit</button>
+                            <button type="submit" id="submit" name="submit" class="btn btn-dark" onclick="validateForm();">Submit</button>
                             <a href="../" class="btn btn-light">Home</a>
                         </div>
 

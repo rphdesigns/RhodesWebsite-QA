@@ -39,8 +39,8 @@ if (array_key_exists('name', $_POST)) {
     $mail->Username = 'development@rphdesigns.com';
     $mail->Password = 'goCubsgo2727!';
     $mail->setFrom('development@rphdesigns.com', 'RPH');
-    // $mail->addAddress('coach@rhodesperformance.net', 'Rhodes Performance');
-    $mail->addAddress('development@rphdesigns.com', 'Rhodes Performance');
+    $mail->addAddress('coach@rhodesperformance.net', 'Rhodes Performance');
+    //$mail->addAddress('development@rphdesigns.com', 'Rhodes Performance');
     $mail->Subject = 'Flexibility Testing Form for ' . $name;
 
     $mail->msgHTML(false);

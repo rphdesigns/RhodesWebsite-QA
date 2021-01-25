@@ -45,8 +45,8 @@ if (array_key_exists('name', $_POST)) {
     $mail->Username = 'development@rphdesigns.com';
     $mail->Password = 'goCubsgo2727!';
     $mail->setFrom('development@rphdesigns.com', 'RPH-Contact Form Emails');
-    // $mail->addAddress('coach@rhodesperformance.net', 'Rhodes Performance');
-    $mail->addAddress('development@rphdesigns.com', 'RPH-QA');
+    $mail->addAddress('coach@rhodesperformance.net', 'Rhodes Performance');
+    //$mail->addAddress('development@rphdesigns.com', 'RPH-QA');
     $mail->addCC($email, $name);
     $mail->addBCC('development@rphdesigns.com', 'Rhodes Performance');
     $mail->Subject = 'Contact Form from ' . $name;
