@@ -24,7 +24,7 @@ include('bronze_email.php')
     <?php include('../navbar.php') ?>
     <div class="container">
         <div class="row moreinforow">
-            <div class="col-lg">
+            <div class="col-lg-12">
                 <div class=" bronze_form text-white">
                     <div style="padding: 30px 0px 30px 0px; text-align: center;">
                         <h1>Bronze Package</h1>

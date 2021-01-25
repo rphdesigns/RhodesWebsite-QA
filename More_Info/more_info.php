@@ -1,7 +1,4 @@
-<?php
-include('more_info_email.php')
-?>
-
+<?php include('more_info_email.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,118 +11,107 @@ include('more_info_email.php')
     <link rel="stylesheet" type="text/css" href="../rhodesindex.css" />
     <link rel="icon" type="image" href="Logos/logo-R.png">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <title>More Info</title>
-<!-- Client side validation, server side email set up -->
+    <title></title>
+    <!-- Client side validation, server side email set up -->
 </head>
 
 <body class="rhodes moreinfoback ">
     <?php include('../navbar.php') ?>
     <div class="container">
         <div class="row moreinforow">
-            <div class="col-lg justify-content-center">
-                <div class=" moreinfo text-white">
-                    <div style="padding: 30px 0px 30px 0px;">
-                        <h1>More Info</h1>
-                        <h6>Please fill in the below form to request more info about Rhodes Performance</h6>
-                        <div id="error">
-                            <?php echo $error . $successMessage; ?>
+            <div class=" col-lg-12 moreinfo text-white">
+                <div style="padding: 30px 10px 30px 10px;">
+                    <h1>More Info</h1>
+                    <h6>Please fill in the below form to request more info about Rhodes Performance</h6>
+                    <div id="error">
+                        <?php echo $error . $successMessage; ?>
+                    </div>
+                </div>
+
+                <form method="POST" nonvalidate class="moreinfoform1">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-3">
+                            <div class="form-group moreinfoform">
+                                <label for="name">Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Hulk Hogan">
+                            </div>
                         </div>
                     </div>
-
-                    <form method="POST" nonvalidate class="moreinfoform1">
-                        <div class="row justify-content-md-center">
-                            <div class="col-md-3">
-                                <div class="form-group moreinfoform">
-                                    <label for="name">Name</label>
-                                </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-3">
+                            <div class="form-group moreinfoform">
+                                <label for="email">Email</label>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Hulk Hogan">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="batman@justiceleague.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-3">
+                            <div class="form-group moreinfoform">
+                                <label for="package">Package</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Bronze</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Silver</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">Gold</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="col-md-3">
-                                <div class="form-group moreinfoform">
-                                    <label for="email">Email</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="batman@justiceleague.com">
-                                </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-3">
+                            <div class="form-group moreinfoform">
+                                <label for="sport">Sport</label>
                             </div>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="col-md-3">
-                                <div class="form-group moreinfoform">
-                                    <label for="package">Package</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">Bronze</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">Silver</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                        <label class="form-check-label" for="inlineRadio3">Gold</label>
-                                    </div>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="sport" name="sport" placeholder="Baseball">
                             </div>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="col-md-3">
-                                <div class="form-group moreinfoform">
-                                    <label for="sport">Sport</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="sport" name="sport" placeholder="Baseball">
-                                </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-3">
+                            <div class="form-group" style="font-size: large;">
+                                <label for="content">What would you like to ask us?</label>
                             </div>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="col-md-3">
-                                <div class="form-group" style="font-size: large;">
-                                    <label for="content">What would you like to ask us?</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" id="content" name="content" rows="2"></textarea>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" id="content" name="content" rows="2"></textarea>
                             </div>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-8">
+                            <div class="form-group">
                             </div>
                         </div>
-                        <button type="submit" id="submit" name="submit" class="btn btn-dark">Submit</button>
-                        <a href="../" class="btn btn-light">Home</a>
-                    </form>
-                </div>
+                    </div>
+                    <button type="submit" id="submit" name="submit" class="btn btn-dark">Submit</button>
+                    <a href="../" class="btn btn-light">Home</a>
+                </form>
             </div>
-            <!-- <div class="col-lg-6 moreinfoback">
-        </div> -->
         </div>
     </div>
-
-
-
-
-
-
-
 
     <?php include('../footer.php') ?>
 

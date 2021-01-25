@@ -74,11 +74,11 @@ body {
   background: no-repeat;
   background-image: url(http://rhodesperformance.net/Logos/R-logo-backdrop.jpg);
   background-position: center;
-  background-size: contain;
+  background-size:cover;
 }
 
 .moreinforow {
-  padding: 100px 100px 200px 100px;
+  padding: 100px 0px 100px 0px;
 }
 
 .bronze_form {
@@ -95,4 +95,21 @@ body {
 .bronze_label {
   padding-left: 25px;
   text-align: left;
+}
+
+.site-credits {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.profile-img{
+  height:230px;
+  width: 60%
 }

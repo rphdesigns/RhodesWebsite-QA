@@ -1,12 +1,36 @@
-<?php include('mail.php'); ?>
-<?php include('body.php'); ?>
+<?php
+
+include('mail.php');
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="rhodesindex.css" />
+    <link rel="icon" type="image" href="http://rhodesperformance.net/Logos/logo-R.png">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <title>Rhodes Performance</title>
+
+    <!-- Contact form client validation -->
+
+</head>
 
 <body class="rhodes">
 
     <?php include('navbar.php') ?>
 
     <section class="jumbotron text-center" id="jumbotron" style="background-image: url(http://rhodesperformance.net/Logos/logo-box-edit.jpg);">
-
+        <!-- <div class="container">
+            <p>
+                <a href="Testing_Forms/flex_testing.php" class="btn btn-secondary my-2">Testing Forms</a>
+            </p>
+        </div> -->
     </section>
 
     <div class="container-fluid" style="padding: 35px 35px 0px 35px;">
@@ -100,8 +124,8 @@
 
     <div class="container-fluid" style="padding: 35px 35px 35px 35px;">
         <div class="row">
-            <div class="bg-dark text-white col-lg-4">
-                <div class="col-md-12 mb-md-0 mb-5">
+            <div class="bg-dark text-white col-lg-6">
+                <div class="col-md-9 mb-md-0 mb-5">
                     <div class="my-3 py-3">
                         <h2 class="display-5">Contact Us</h2>
                         <p class="lead">Do you have a question? Please don't hesitate to contact us directly.</p>
@@ -109,15 +133,13 @@
 
                     <form id="contact-form" name="contact-form" method="POST" style="padding-bottom: 10mm;">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <input type="text" id="name" name="name" class="form-control">
                                     <label for="name" class="">Your name</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <input type="text" id="email" name="email" class="form-control">
                                     <label for="email" class="">Your email</label>
@@ -141,7 +163,6 @@
                             </div>
                         </div>
                         <div class="text-center text-md-left">
-                            <br>
                             <button type="submit" id="submit" name="submit" onclick="validateForm();" class="btn btn-light text-dark">Submit</button>
                         </div>
 
@@ -152,38 +173,15 @@
                 </div>
 
             </div>
-            <div class="bg-light col-lg-8">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Hello!</h2>
-                    <h4>My name is Aaron Rhodes.</h4>
-                </div>
-                <div class="my-3 py-12">
-                    <div class="my-3">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p class="lead">Since you are here, you likely are looking for more success with your fitness or
-                                    looking to improve your performance in your sport. These are my passions and being able to assist
-                                    others in this journey is what I thrive at. I have many years of experience in professional sports
-                                    including the MLB and NHL. </p>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="http://rhodesperformance.net/Images/profile.png" alt="" class="img-thumbnail profile-img">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-11">
-                                <p class="lead">Creating solutions to performance problems are not always black and white.
-                                    However, many of the basic foundational concepts are still missed and vital to setting up long term success.
-                                    Showing up and creating consistency is the key to any successful endeavor. This is where we start at
-                                    Rhodes Performance. Let's start your journey today.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="my-3 py-3">
-                    <div class="col-md-6">
-                        <a href="More_Info/more_info.php" class="btn btn-secondary my-2">Start your journey here!</a>
+            <div class="bg-light col-lg-6">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">Hello! My name is Aaron Rhodes.</h2>
+                    <p class="lead">Since you are here, you likely are looking for more success with your fitness or looking to improve your performance in your sport. These are my passions and being able to assist others in this journey is what I thrive at. I have many years of experience in professional sports including the MLB and NHL. Creating solutions to performance problems are not always black and white. However, many of the basic foundational concepts are still missed and vital to setting up long term success. Showing up and creating consistency is the key to any successful endeavor. This is where we start at Rhodes Performance. Let's start your journey today.</p>
+                    <div class="container">
+                        <p>
+                            <a href="Testing_Forms/flex_testing.php" class="btn btn-secondary my-2">Testing Forms</a>
+                            <a href="More_Info/more_info.php" class="btn btn-secondary my-2">Start your journey here!</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -191,6 +189,11 @@
     </div>
 
     <?php include('footer.php'); ?>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="validateform.js"></script>
 </body>
 
 </html>
