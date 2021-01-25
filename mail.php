@@ -43,7 +43,7 @@ if (array_key_exists('name', $_POST)) {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->SMTPAuth = true;
     $mail->Username = 'development@rphdesigns.com';
-    $mail->Password = 'goCubsgo2727!';
+    $mail->Password = '';
     $mail->setFrom('development@rphdesigns.com', 'RPH-Contact Form Emails');
     $mail->addAddress('coach@rhodesperformance.net', 'Rhodes Performance');
     //$mail->addAddress('development@rphdesigns.com', 'RPH-QA');
