@@ -9,89 +9,40 @@
 
     </section>
 
-    <div class="container-fluid" style="padding: 35px 35px 0px 35px;">
-        <div class="row">
-            <div class="bg-white col-lg-4 grid">
-                <div class="row">
-                    <div class="col-md">
-                        <img class="rounded img-responsive" src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" height="233" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md bg-white" style="padding-top: 2px;">
+    <div id="main">
+        <div class="inner">
+
+            <!-- Boxes -->
+            <div class="thumbnails" style="padding: 35px 35px 0px 35px;">
+
+                <div class="box bg-white">
+                    <img class="image fit" src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" height="233" style="object-fit: cover;">
+                    <div class="inner">
                         <h2>Bronze</h2>
                         <h3>$50 <small class="text-muted">/ mo</small> or $360 <small class="text-muted">/ year</small></h3>
+                        <p>Pro performance coaching package.</p>
+                        <p>Weekly coaching feedback to keep you on the path to success.</p>
+                        <a href="./Question_Forms/bronze_question.php" class="btn btn-secondary my-2">Get Started!</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md bg-white">
-                        <ul class="list-unstyled mt-3 mb-4" style="padding-bottom: 23px;">
-                            <li>Individualized programming based on your goals.</li>
-                            <li>One simple step away from starting your journey.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md bg-white">
-                        <div class="btn-group btn-white">
-                            <a href="./Question_Forms/bronze_question.php" class="btn btn-secondary my-2">Get Started!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-dark col-lg-4 grid">
-                <div class="row">
-                    <div class="col-md">
-                        <img class="rounded img-fluid" src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md bg-dark text-white">
+                <div class="box bg-dark text-white">
+                    <img class="image fit" src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" height="233" style="object-fit: cover;">
+                    <div class="inner">
                         <h2>Silver</h2>
                         <h3>$200 <small class="text-muted">/ mo</small> or $2000 <small class="text-muted">/ yr</small></h3>
+                        <p>Pro performance coaching package.</p>
+                        <p>Weekly coaching feedback to keep you on the path to success.</p>
+                        <a href="./Question_Forms/bronze_question.php" class="btn btn-secondary my-2">Get Started!</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md bg-dark text-white">
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>Pro performance coaching package.</li>
-                            <li>Weekly coaching feedback to keep you on the path to success.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md bg-dark text-white">
-                        <div class="btn-group btn-white">
-                            <a href="./More_Info/more_info.php" class="btn btn-secondary my-2">More Info</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white col-lg-4 grid">
-                <div class="row">
-                    <div class="col-md">
-                        <img class="rounded img-fluid" src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md bg-white">
+                <div class="box bg-white">
+                    <img class="image fit" src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" height="233" style="object-fit: cover;">
+                    <div class="inner">
                         <h2>Gold</h2>
                         <h3>$6000 <small class="text-muted">/ yr</small></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md bg-white">
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>Complete Performance Package.</li>
-                            <li>Reserved for the professional athlete looking for serious results.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md bg-white">
-                        <div class="btn-group btn-white">
-                            <a href="./More_Info/more_info.php" class="btn btn-secondary my-2">More Info</a>
-                        </div>
+                        <p>Complete Performance Package.</p>
+                        <p>Reserved for the professional athlete looking for serious results.</p>
+                        <a href="./Question_Forms/bronze_question.php" class="btn btn-secondary my-2">Get Started!</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +57,7 @@
                         <h2 class="display-5">Contact Us</h2>
                         <p class="lead">Do you have a question? Please don't hesitate to contact us directly.</p>
                     </div>
-
+                    <!-- Contact Form -->
                     <form id="contact-form" name="contact-form" method="POST" style="padding-bottom: 10mm;">
                         <div class="row">
                             <div class="col-md-12">
@@ -150,40 +101,31 @@
                         <?php echo $error . $successMessage ?>
                     </div>
                 </div>
-
             </div>
             <div class="bg-light col-lg-8">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Hello!</h2>
-                    <h4>My name is Aaron Rhodes.</h4>
-                </div>
-                <div class="my-3 py-12">
-                    <div class="my-3">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p class="lead">Since you are here, you likely are looking for more success with your fitness or
-                                    looking to improve your performance in your sport. These are my passions and being able to assist
-                                    others in this journey is what I thrive at. I have many years of experience in professional sports
-                                    including the MLB and NHL. </p>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="http://rhodesperformance.net/Images/profile.png" alt="" class="img-thumbnail profile-img">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-11">
-                                <p class="lead">Creating solutions to performance problems are not always black and white.
-                                    However, many of the basic foundational concepts are still missed and vital to setting up long term success.
-                                    Showing up and creating consistency is the key to any successful endeavor. This is where we start at
-                                    Rhodes Performance. Let's start your journey today.</p>
+                <div class="col-md-12 mb-md-0 mb-5">
+                    <div class="my-3 py-12">
+                        <div class="my-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 class="display-5">Hello!</h2>
+                                    <h4>My name is Aaron Rhodes.</h4>
+                                    <p class="lead">Since you are here, you likely are looking for more success with your fitness or
+                                        looking to improve your performance in your sport. These are my passions and being able to assist
+                                        others in this journey is what I thrive at. I have many years of experience in professional sports
+                                        including the MLB and NHL. Creating solutions to performance problems are not always black and white.
+                                        However, many of the basic foundational concepts are still missed and vital to setting up long term success.
+                                        Showing up and creating consistency is the key to any successful endeavor. This is where we start at
+                                        Rhodes Performance. Let's start your journey today.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="padding: 100px 0px 15px 0px;">
+                                        <img class="image fit" src="http://rhodesperformance.net/Images/profile.png" height="350" style="object-fit: cover;">
+                                        <a href="More_Info/more_info.php" class="btn btn-secondary my-2">Start your journey here!</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="my-3 py-3">
-                    <div class="col-md-6">
-                        <a href="More_Info/more_info.php" class="btn btn-secondary my-2">Start your journey here!</a>
                     </div>
                 </div>
             </div>
