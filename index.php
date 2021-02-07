@@ -1,4 +1,4 @@
-<?php include('mail.php'); ?>
+<!-- <?php include('mail.php'); ?> -->
 <?php include('body.php'); ?>
 
 <body class="rhodes">
@@ -11,10 +11,8 @@
 
     <div id="main">
         <div class="inner">
-
             <!-- Boxes -->
             <div class="thumbnails" style="padding: 35px 35px 0px 35px;">
-
                 <div class="box bg-white">
                     <img class="image fit" src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" height="233" style="object-fit: cover;">
                     <div class="inner">
@@ -51,18 +49,22 @@
 
     <div class="container-fluid" style="padding: 35px 35px 35px 35px;">
         <div class="row">
+            <!-- Contact Form -->
             <div class="bg-dark text-white col-lg-4">
                 <div class="col-md-12 mb-md-0 mb-5">
                     <div class="my-3 py-3">
                         <h2 class="display-5">Contact Us</h2>
                         <p class="lead">Do you have a question? Please don't hesitate to contact us directly.</p>
                     </div>
-                    <!-- Contact Form -->
-                    <form id="contact-form" name="contact-form" method="POST" style="padding-bottom: 10mm;">
+                    <form action="/" class="needs-validation" method="POST" style="padding-bottom: 10mm;" novalidate>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
+                                
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Name is required!
+                                    </div>
                                     <label for="name" class="">Your name</label>
                                 </div>
                             </div>
@@ -70,15 +72,23 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
+                                    <input type="text" id="email" name="email" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Email is required!
+                                    </div>
+                                    <?php echo $nameError ?>
                                     <label for="email" class="">Your email</label>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <input type="text" id="subject" name="subject" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Subject is required!
+                                    </div>
                                     <label for="subject" class="">Subject</label>
                                 </div>
                             </div>
@@ -86,22 +96,26 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Message is required!
+                                    </div>
                                     <label for="message">Your message</label>
                                 </div>
                             </div>
                         </div>
                         <div class="text-center text-md-left">
                             <br>
-                            <button type="submit" id="submit" name="submit" onclick="validateForm();" class="btn btn-light text-dark">Submit</button>
+                            <button type="submit" id="submit" class="btn btn-light text-dark">Submit</button>
                         </div>
 
                     </form>
-                    <div class="status" id="status">
+                    <!-- <div class="status" id="status">
                         <?php echo $error . $successMessage ?>
-                    </div>
+                    </div> -->
                 </div>
             </div>
+            <!-- About Section -->
             <div class="bg-light col-lg-8">
                 <div class="col-md-12 mb-md-0 mb-5">
                     <div class="my-3 py-12">
@@ -131,6 +145,8 @@
             </div>
         </div>
     </div>
+
+    
 
     <?php include('footer.php'); ?>
 </body>

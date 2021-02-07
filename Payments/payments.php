@@ -1,4 +1,4 @@
-<?php include('more_info_email.php'); ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,21 +11,18 @@
     <link rel="stylesheet" type="text/css" href="../rhodesindex.css" />
     <link rel="icon" type="image" href="Logos/logo-R.png">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <title></title>
+    <title>Payments</title>
     <!-- Client side validation, server side email set up -->
 </head>
 
-<body class="rhodes moreinfoback ">
+<body class="rhodes">
     <?php include('../navbar.php') ?>
     <div class="container">
         <div class="row moreinforow">
             <div class=" col-lg-12 moreinfo text-white">
                 <div style="padding: 30px 10px 30px 10px;">
-                    <h1>More Info</h1>
+                    <h1>Payments</h1>
                     <h6>Please fill in the below form to request more info about Rhodes Performance</h6>
-                    <div id="error">
-                        <?php echo $error . $successMessage; ?>
-                    </div>
                 </div>
 
                 <form method="POST" nonvalidate class="moreinfoform1">

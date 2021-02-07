@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
     <link rel="icon" type="image" href="http://rhodesperformance.net/Logos/logo-R.png">
+    <script type="text/javascript" src="validateform.js"></script>
+    <!-- <script  defer src="script.js"></script> -->
 	
 
     <title>Rhodes Performance</title>

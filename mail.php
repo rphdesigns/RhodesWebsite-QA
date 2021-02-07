@@ -4,6 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
 $error = "";
+$nameError = "";
 $successMessage = "";
 
 
@@ -16,12 +17,16 @@ if (array_key_exists('name', $_POST)) {
 
   if (!$name) {
     $error .= 'Name is required.<br>';
+    $nameError .= '<div class="invalid-feedback">Email is required!</div>';
   }
   if (!$email) {
     $error .= 'Email is required.<br>';
   }
   if (!$subject) {
     $error .= 'Subject is required.<br>';
+  }
+  if (!$message) {
+    $error .= 'Message is required.';
   }
   if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
     $error .= "The email address is invalid. <br>";
