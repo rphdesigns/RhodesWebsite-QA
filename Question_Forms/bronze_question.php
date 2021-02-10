@@ -142,6 +142,7 @@ include('bronze_email.php')
                         </div>
                         <div style="text-align: center;">
                             <button type="submit" id="submit" name="submit" class="btn btn-dark" onclick="validateForm();">Submit</button>
+                            <a href="../Payments/payments.php" class="btn btn-light">Payment</a>
                             <a href="../" class="btn btn-light">Home</a>
                         </div>
 

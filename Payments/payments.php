@@ -103,8 +103,9 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" id="submit" name="submit" class="btn btn-dark">Submit</button>
+                    <button type="submit" id="checkout-button" name="submit" class="btn btn-dark">Checkout</button>
                     <a href="../" class="btn btn-light">Home</a>
+                    <a href="../checkout.php" class="btn btn-light">Checkout</a>
                 </form>
             </div>
         </div>
